@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
 
 @model List<StudentPortal.Web.Models.Entities.Student>
 
@@ -28,6 +24,7 @@
                     <td>@Stdent.Name</td>
                     <td>@Stdent.Email</td>
                     <td>@Stdent.Phone</td>
+                    @*Attention indiquez au système l'entité à prendre en compt par son id pour envoyer vers la page Edit*@
                     <td>
                         <a class="btn btn-primary" 
                            asp-controller="Student"  
@@ -44,4 +41,4 @@
 
     </table>
 </div>
-@*Attention indiquez au système l'entité à prendre en compt par son id pour envoyer vers la page Edit*@
+
